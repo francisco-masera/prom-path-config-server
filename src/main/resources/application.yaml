@@ -4,6 +4,3 @@ spring:
     uri: https://github.com/Dargor94/prom-path-config-repository
     clone-on-start: true
   profiles.active: dev
-  cloud:
-    config:
-      label: dev
