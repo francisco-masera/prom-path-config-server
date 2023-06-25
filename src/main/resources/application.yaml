@@ -3,4 +3,3 @@ spring:
   cloud.config.server.git:
     uri: https://github.com/Dargor94/prom-path-config-repository
     clone-on-start: true
-  profiles.active: dev
