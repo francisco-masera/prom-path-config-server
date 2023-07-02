@@ -10,7 +10,6 @@ spring:
       port: 8200
       kvVersion: 2
       token: ${SPRING_CLOUD_CONFIG_TOKEN}
-      default-key: config-repository
       authentication: TOKEN
     git:
       default-label: main
