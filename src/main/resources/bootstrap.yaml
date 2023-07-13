@@ -1,0 +1,33 @@
+spring:
+  application.name: config-server
+  cloud:
+    vault:
+      token: hvs.Ud1IunJLvNM2LJa7L7R7cFO7
+      authentication: token
+      uri: http://localhost:8200
+      kv:
+        default-context: config-server
+        backend: secret
+    config.server:
+      git:
+        order: 2
+        default-label: main
+        uri: https://github.com/Dargor94/prom-path-config-repository
+        username: ${username}
+        password: ${password}
+        clone-on-start: true
+server.port: 8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+    region: default
+    registryFetchIntervalSeconds: 5
+logging:
+  level:
+    root: info
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: "*"
