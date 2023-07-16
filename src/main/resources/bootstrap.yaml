@@ -2,7 +2,7 @@ spring:
   application.name: config-server
   cloud:
     vault:
-      token: hvs.Ud1IunJLvNM2LJa7L7R7cFO7
+      token: ${VAULT_TOKEN}
       authentication: token
       uri: http://localhost:8200
       kv:
