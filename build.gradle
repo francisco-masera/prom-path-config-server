@@ -29,7 +29,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-actuator'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
 
-
     compileOnly 'org.springframework.cloud:spring-cloud-starter-sleuth'
     compileOnly 'org.projectlombok:lombok'
 
