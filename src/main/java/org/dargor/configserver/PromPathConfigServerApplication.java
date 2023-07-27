@@ -1,4 +1,4 @@
-package org.dargor.prompathconfigserver;
+package org.dargor.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

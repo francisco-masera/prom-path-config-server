@@ -1,4 +1,4 @@
-package org.dargor.prompathconfigserver;
+package org.dargor.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
