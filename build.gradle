@@ -51,6 +51,12 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: "org.sonarqube"
 
 
+jar {
+    manifest {
+        attributes 'PromPathConfigServerApplication': 'org.dargor.configserver.PromPathConfigServerApplication'
+    }
+}
+
 dependencyManagement {
     imports {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"

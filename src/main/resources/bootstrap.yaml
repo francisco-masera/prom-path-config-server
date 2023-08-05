@@ -4,13 +4,12 @@ spring:
     vault:
       token: ${VAULT_TOKEN}
       authentication: token
-      uri: http://localhost:8200
+      uri: http://vault:8200
       kv:
         default-context: config-server
         backend: secret
     config.server:
       git:
-        order: 2
         default-label: main
         uri: https://github.com/Dargor94/prom-path-config-repository
         username: ${username}
@@ -20,7 +19,7 @@ server.port: 8888
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://discovery-server:8082/eureka/
     region: default
     registryFetchIntervalSeconds: 5
 logging:
