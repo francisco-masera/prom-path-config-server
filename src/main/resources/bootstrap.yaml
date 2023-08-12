@@ -19,7 +19,7 @@ server.port: 8888
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://ghcr.io/dargor94/discovery-server:8082/eureka/
+      defaultZone: http://discovery-server:8082/eureka/
     region: default
     registryFetchIntervalSeconds: 5
 logging:
