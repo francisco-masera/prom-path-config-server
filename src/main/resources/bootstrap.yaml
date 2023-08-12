@@ -22,11 +22,3 @@ eureka:
       defaultZone: http://discovery-server:8082/eureka/
     region: default
     registryFetchIntervalSeconds: 5
-logging:
-  level:
-    root: info
-management:
-  endpoints:
-    web:
-      exposure:
-        exclude: "*"
