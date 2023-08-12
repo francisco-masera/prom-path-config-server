@@ -16,9 +16,3 @@ spring:
         password: ${password}
         clone-on-start: true
 server.port: 8888
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery-server:8082/eureka/
-    region: default
-    registryFetchIntervalSeconds: 5

@@ -25,12 +25,10 @@ dependencies {
     implementation(
             'org.springframework.boot:spring-boot-starter-webflux',
             'org.springframework.boot:spring-boot-starter-actuator',
-            'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server',
             'org.springframework.cloud:spring-cloud-starter-bootstrap',
             'org.springframework.cloud:spring-cloud-config-server',
             'org.springframework.cloud:spring-cloud-starter-vault-config',
             'org.springframework.cloud:spring-cloud-starter-config',
-            'org.springframework.cloud:spring-cloud-starter-zipkin:2.2.8.RELEASE',
     )
 
     productionRuntimeClasspath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3'
