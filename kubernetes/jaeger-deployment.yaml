@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jaeger-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jaeger-operator
+  template:
+    metadata:
+      labels:
+        app: jaeger-operator
+    spec:
+      containers:
+        - name: jaeger-operator
+          image: jaegertracing/jaeger-operator:master
+          args: ["start"]
+          ports:
+            - containerPort: 5775
+          env:
+            - name: LOG-LEVEL
+              value: debug
