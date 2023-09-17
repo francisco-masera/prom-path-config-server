@@ -34,12 +34,12 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
-#env:
-#  AZURE_CONTAINER_REGISTRY: "dargorcr"
-#  CONTAINER_NAME: "config-server"
-#  RESOURCE_GROUP: "first-ms"
-#  CLUSTER_NAME: "config-server"
-#  DEPLOYMENT_MANIFEST_PATH: "kubernetes/deployment.yaml"
+env:
+  AZURE_CONTAINER_REGISTRY: "dargorcr"
+  CONTAINER_NAME: "config-server"
+  RESOURCE_GROUP: "first-ms"
+  CLUSTER_NAME: "config-server"
+  DEPLOYMENT_MANIFEST_PATH: "kubernetes/deployment.yaml"
 
 jobs:
   buildImage:
