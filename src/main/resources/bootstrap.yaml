@@ -1,18 +1,21 @@
 spring:
   application.name: config-server
   cloud:
-    vault:
-      token: ${VAULT_TOKEN}
-      authentication: token
-      uri: http://vault:8200
-      kv:
-        default-context: config-server
-        backend: secret
+#    vault:
+#      token: ${VAULT_TOKEN}
+#      authentication: token
+#      uri: http://vault:8200
+#      kv:
+#        default-context: config-server
+#        backend: secret
     config.server:
       git:
         default-label: main
         uri: https://github.com/Dargor94/prom-path-config-repository
-        username: ${username}
-        password: ${password}
+        username: ${github-user}
+        password: ${github-token}
         clone-on-start: true
+    gcp:
+      secretmanager:
+        enabled: true
 server.port: 8888
