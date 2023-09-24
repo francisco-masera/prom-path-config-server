@@ -16,8 +16,8 @@ public class EnvironmentPropertiesLogger {
     @EventListener
     public void handleContextRefreshed(ApplicationContextInitializedEvent event) {
         ConfigurableEnvironment env = event.getApplicationContext().getEnvironment();
-        log.info("{}={}", "bael.property", env.getProperty("bael.property"));
-        log.info("{}={}", "app.name", env.getProperty("app.name"));
+        log.info("{}={}", "git-user", env.getProperty("spring.cloud.config.server.git.username"));
+        log.info("{}={}", "git-pwd", env.getProperty("spring.cloud.config.server.git.password"));
     }
 
     @EventListener
