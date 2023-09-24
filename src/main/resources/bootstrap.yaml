@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: sm://
   application.name: config-server
   cloud:
 #    vault:
@@ -8,13 +10,14 @@ spring:
 #      kv:
 #        default-context: config-server
 #        backend: secret
-    config.server:
-      git:
-        default-label: main
-        uri: https://github.com/Dargor94/prom-path-config-repository
-        username: ${github-user}
-        password: ${github-token}
-        clone-on-start: true
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/Dargor94/prom-path-config-repository
+          username: ${sm://github-user}
+          password: ${sm://github-token}
+          clone-on-start: true
     gcp:
       secretmanager:
         enabled: true
