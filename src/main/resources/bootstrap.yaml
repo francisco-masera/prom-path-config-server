@@ -15,8 +15,8 @@ spring:
         git:
           default-label: main
           uri: https://github.com/Dargor94/prom-path-config-repository
-          username: ${sm://github-user}
-          password: ${sm://github-token}
+          username: ${github-user}
+          password: ${github-token}
           clone-on-start: true
     gcp:
       secretmanager:
