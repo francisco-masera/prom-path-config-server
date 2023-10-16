@@ -36,9 +36,8 @@ dependencies {
             'org.springframework.boot:spring-boot-starter-actuator',
             'org.springframework.cloud:spring-cloud-starter-bootstrap',
             'org.springframework.cloud:spring-cloud-config-server',
-            //   'org.springframework.cloud:spring-cloud-starter-vault-config',
-            'org.springframework.cloud:spring-cloud-starter-config',
-            'com.google.cloud:spring-cloud-gcp-starter-secretmanager:3.4.4'
+             'org.springframework.cloud:spring-cloud-starter-vault-config',
+            'org.springframework.cloud:spring-cloud-starter-config'
     )
 
     productionRuntimeClasspath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3'

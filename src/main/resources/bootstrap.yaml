@@ -3,24 +3,24 @@ spring:
     import: sm://
   application.name: config-server
   cloud:
-#    vault:
-#      token: ${VAULT_TOKEN}
-#      authentication: token
-#      uri: http://vault:8200
-#      kv:
-#        default-context: config-server
-#        backend: secret
+    vault:
+      token: ${VAULT_TOKEN}
+      authentication: token
+      uri: http://vault:8200
+      kv:
+        default-context: config-server
+        backend: secret
     config:
       server:
         git:
           default-label: main
           uri: https://github.com/Dargor94/prom-path-config-repository
-          username: ${sm://github-user}
-          password: ${sm://github-token}
+          username: ${username}
+          password: ${password}
           clone-on-start: true
         bootstrap: true
-    gcp:
-      secretmanager:
-        enabled: true
-        project-id: prime-principle-399922
 server.port: 8888
+logging:
+  level:
+    com.google: DEBUG
+    io.grpc: DEBUG
