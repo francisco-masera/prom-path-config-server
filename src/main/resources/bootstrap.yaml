@@ -1,6 +1,4 @@
 spring:
-  config:
-    import: sm://
   application.name: config-server
   cloud:
     vault:
@@ -20,7 +18,3 @@ spring:
           clone-on-start: true
         bootstrap: true
 server.port: 8888
-logging:
-  level:
-    com.google: DEBUG
-    io.grpc: DEBUG
