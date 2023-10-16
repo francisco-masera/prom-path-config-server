@@ -16,5 +16,4 @@ spring:
           username: ${username}
           password: ${password}
           clone-on-start: true
-        bootstrap: true
 server.port: 8888
