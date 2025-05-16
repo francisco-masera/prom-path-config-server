@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.5.14'
+    id 'org.springframework.boot' version '3.4.5'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
     id "org.sonarqube" version "4.2.1.3168"
 }
@@ -13,7 +13,7 @@ group = 'org.dargor'
 version = ''
 
 java {
-    sourceCompatibility = 'VERSION_11'
+    sourceCompatibility(JavaVersion.VERSION_17)
 }
 
 repositories {
